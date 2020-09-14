@@ -1,0 +1,19 @@
+<template>
+    <lightning-card  title="Meeting Room Info">
+        <ui>
+            <template for:each={meetingRoomInfo} for:item="room">
+                <li key={room.roomName} style="padding: 10x;">
+                    <c-meeting-room-child show-room-info>
+                        <!-- <div class="slds-p-around_medium lgc-bg"> -->
+                            <lightning-tile label={room.roomName}  slot="roomInfo">
+                                <p class="slds-truncate" title={room.roomCapacity}>Raoom Capacity :
+                                    {room.roomCapacity}</p>
+                            </lightning-tile>
+                            <div>India is my country</div>
+                        <!-- </div> -->
+                    </c-meeting-room-child>
+                </li>
+            </template>
+        </ui>
+    </lightning-card>
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+      <div class="slds-m-around_medium">
+        <p>Hello, {greeting}!</p>
+        <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+      </div>
+      <div class="slds-m-around_medium">
+          
+            <template for:each={contactsList} for:item="contact" for:index="index">
+               <li key={contact.Id}>
+                <lightning-formatted-text key={contact.Id} value={contact.Name} title={contact.Name}></lightning-formatted-text> &nbsp;
+                <lightning-formatted-text key={contact.Id} value={contact.Type} title={contact.Type}></lightning-formatted-text><br>
+               </li>
+                
+               
+            </template>
+          
+            
+      </div>
+
+    </lightning-card>
+  </template>
+  
