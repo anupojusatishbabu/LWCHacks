@@ -14,4 +14,6 @@ export default class MeetingRoomParent extends LightningElement {
         {roomName:'C-03', roomCapacity:'2'}
     ]
 
+    
+
 }
