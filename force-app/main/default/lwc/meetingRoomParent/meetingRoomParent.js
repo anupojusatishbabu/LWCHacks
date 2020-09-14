@@ -1,9 +1,7 @@
 import { LightningElement } from 'lwc';
 
-
 export default class MeetingRoomParent extends LightningElement {
 
-    String hello;
     meetingRoomInfo = [
         {roomName:'A-01', roomCapacity:'10'},
         {roomName:'A-02', roomCapacity:'12'},
